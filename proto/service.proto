@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option go_package = "/api";
+
+import "types.proto";
+import "google/protobuf/empty.proto";
+
+service Service {
+  rpc Echo(google.protobuf.Empty) returns (Message);
+}
